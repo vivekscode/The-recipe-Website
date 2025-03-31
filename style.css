@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navList{
+    list-style: none;
+    font-size: 2rem;
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    gap: 26rem;
+}
+.navItems1{
+    padding-left: 10px;
+}
+.navItems2{
+    /* margin: 5px; */
+    padding-right: 10px;
+    
+
+}
+#navItemsrow{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x:hidden;
+    background-color: white;
+
+
+    
+}
+.navContainer{
+    width: 100vw;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* margin: 5px; */
+    /* overflow: none; */
+}
+#navLogo{
+    font-size: 2.5rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+/* ------main--------- */
+
+.parentbox{
+    margin: auto;
+    
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 5px 0 3px 3px orange,-5px 0 3px 3px purple;
+    
+}
+/* first box  */
+.childbox{
+    
+    
+    display: flex;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    padding: 1.2rem;
+    padding-top:1.3rem;
+    
+}
+.leftbox{
+    
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.rightbox{
+    transition: all 2s;
+    position: relative;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.rightbox:hover #text {
+    opacity: 1;
+    background-color: rgba(41, 8, 8, 0.557); /* Background color on hover */
+}
+.rightbox:hover img{
+    box-shadow: 0 0 5px red;
+}
+.rightbox img{
+    height: 350px; 
+    width: 200px;
+    border-radius: 10%;
+    transition:box-shadow 2s;
+}
+#text{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: background-color 0.5s ease, opacity 0.5s ease; /* Add transition for background color and opacity */
+    border-radius: 10%;
+}
+.childbox .leftbox h2{
+    padding-bottom: 5px;
+    font-size: 2rem;
+    
+}
+.childbox .leftbox h3{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    
+}
+.childbox .leftbox h4{
+    padding-top: 15px;
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    
+}
+.childbox .leftbox li{
+   
+}
+
+/* -----footer----- */
+.footerbox{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+    text-align: center;
+}
